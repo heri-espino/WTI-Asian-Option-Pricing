@@ -60,19 +60,33 @@ reproduced from this source-only repository without independently licensed data.
 | `figures/synthetic_posterior_integration.png` | Synthetic mechanism figure (no raw exchange quotes) |
 | `SOURCE_PROVENANCE.json` | Exact private-source commit and Git blob IDs for transferred files |
 
-## Install
+## Installation
 
-Requires Python 3.11 or later.
+Requires Python 3.11 or later. Choose **one** installation method:
+
+| Method | Command |
+| --- | --- |
+| pip (basic library) | `python -m pip install -r requirements.txt` |
+| pip (development/tests) | `python -m pip install -r requirements-dev.txt` |
+| pip (market-provider clients) | `python -m pip install -r requirements-market.txt` |
+| Conda (development) | `conda env create -f environment.yml` |
+| Conda (optional market clients) | `conda env create -f environment-market.yml` |
+
+Run commands from the repository root. For a new virtual environment,
+PowerShell activation, and more detailed instructions, see
+[SETUP.md](SETUP.md) and [dependency profiles](docs/dependencies.md).
+
+After installing the development profile:
 
 ```bash
-python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# macOS/Linux: source .venv/bin/activate
-python -m pip install -e ".[dev]"
-python -m pytest -q tests/test_bayesian_gbm.py tests/test_asian_pricing.py
+python scripts/check_public_release.py
+python -m pytest -q
+python examples/posterior_integration_vs_plugin.py
 ```
 
-The package imports as `bayesian_asian_options`. For market-data access, install `.[market]` separately. **Installing the package does not download, purchase, or grant rights to market data.** Some empirical entry points require private input files and will not run using this public archive alone.
+The package imports as `bayesian_asian_options`. Optional market clients
+**do not** download or grant rights to Barchart, Databento, or exchange data.
+Some empirical experiments require separately licensed inputs.
 
 ## Reproducing the research
 
@@ -80,6 +94,11 @@ Start with [the experiment map](docs/experiments.md). Synthetic tests do not req
 
 **Citation:** See [`CITATION.cff`](CITATION.cff). The Zenodo DOI will be added **after a verified GitHub release has actually been archived**; no DOI has been assigned to this candidate package yet. A blinded manuscript should not disclose an author-identifying public repository URL unless the journal permits it.
 
-## Licensing
+## License and contributions
 
-Code ownership and an appropriate open-source license must be confirmed **before publication**. Source code licensing never grants redistribution rights for Barchart, Databento, CME/NYMEX or other third-party market data. Do not upload market CSVs, paid data extracts, exchange-derived row-level panels, API keys, or previous repository history to this public repository.
+The original software and documentation are provided under the [MIT License](LICENSE)
+(Copyright © 2026 Heriberto Espino-Montelongo). **The license does not apply to
+vendor market data**: Barchart, Databento, CME/NYMEX or other third-party
+content retains its own rights. See [CONTRIBUTING.md](CONTRIBUTING.md) and the
+[public data policy](docs/market_data_and_reproducibility.md).
+No empirical market CSVs or proprietary contract-date panels are included.

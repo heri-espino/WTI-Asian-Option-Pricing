@@ -1,0 +1,4 @@
+# Optional market-provider clients and research/development tools.
+# Installing market APIs does not purchase or download proprietary market data.
+# The scripts require your own legitimate vendor entitlement and local inputs.
+-e .[dev,market]

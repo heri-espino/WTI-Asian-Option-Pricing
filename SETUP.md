@@ -1,30 +1,54 @@
-# Quick setup
+# Installation and validation
 
-This is the actual clean public research repository. It has a fresh Git
-history and excludes all third-party raw market observations.
+This is the public source-only research software. It has independent Git
+history and excludes the private project's downloaded market observations.
 
-## Install and verify
+For dependency profiles, optional packages and reproducibility constraints,
+see [docs/dependencies.md](docs/dependencies.md).
 
-```bash
-python -m venv .venv
-# PowerShell: .venv\\Scripts\\Activate.ps1
-# Unix: source .venv/bin/activate
-python -m pip install -e ".[dev]"
+## Option A: pip + virtual environment (Windows PowerShell)
+
+```powershell
+cd WTI-Asian-Option-Pricing
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements-dev.txt
 python scripts/check_public_release.py
-python -m pytest -q tests
+python -m pytest -q
+python examples/posterior_integration_vs_plugin.py
 ```
 
-## What can run without market data?
+On macOS/Linux, replace the environment creation/activation with
+`python3 -m venv .venv` and `source .venv/bin/activate`, then run
+the same `python -m pip ...` commands.
 
-Core mathematical and simulation tests do not require a Barchart or Databento
-account. The full empirical workflows under `experiments/` require
-separately licensed dated futures/option observations; see
-`docs/market_data_and_reproducibility.md`. They should not automatically
-download/purchase market data.
+To install only the library, use `requirements.txt` instead.
+To install optional Databento/yfinance clients, use `requirements-market.txt`.
 
-## Releasing the research software
+## Option B: Conda
 
-Do **not** tag or release until the checks in `RELEASE_CHECKLIST.md` pass.
-Enable this repository in Zenodo's GitHub integration *before* the first
-release. After Zenodo archives the GitHub release, use its real DOI in
-`CITATION.cff` and the author-identified manuscript where allowed.
+```bash
+conda env create -f environment.yml
+conda activate wti-asian-option-pricing
+python scripts/check_public_release.py
+python -m pytest -q
+python examples/posterior_integration_vs_plugin.py
+```
+
+The separate `environment-market.yml` adds optional vendor clients,
+but it does not obtain a market-data license.
+
+## What is reproducible?
+
+The numerical tests and illustrative synthetic example require no vendor
+account. Full empirical experiments need **your own licensed input data**,
+plus the time-stamped source definitions documented under `docs/`.
+Do not silently substitute Yahoo CL=F for contract-specific CL curves.
+
+## Before a Zenodo DOI
+
+Finish the open tasks in [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md),
+including the independent scientific and data-rights review, double-blind
+submission policy, and verification of the specific release files.
+The repository has **not** yet been assigned a Zenodo DOI.

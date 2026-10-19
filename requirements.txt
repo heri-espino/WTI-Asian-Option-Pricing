@@ -1,0 +1,4 @@
+# Core library, including its NumPy/pandas/SciPy dependencies.
+# Editable installation makes changes to src/ immediately available.
+# The single source of dependency requirements is pyproject.toml.
+-e .

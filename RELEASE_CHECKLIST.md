@@ -10,11 +10,12 @@
 - [x] Source origin commit and per-file Git blob IDs recorded in SOURCE_PROVENANCE.json.
 
 ## Must pass before a software release / Zenodo DOI
-- [ ] CI: `python -m pip install -e ".[dev]"`, imports, numerical tests and public-file scanner.
+- [x] Public CI installation, imports, 46 numerical tests and source-only scanner passed (commit `d5df8de250446f30fc06a7d6b48421ed28c1aedf`).
+- [ ] Revalidate MIT packaging, pip/Conda manifests, source test suite and wheel/sdist build on this update.
 - [ ] Independently verify full numerical reported results using *private* licensed inputs.
 - [ ] Inspect every source script for local paths, network downloads or proprietary rows.
-- [ ] Confirm author holds the rights to license the source code; choose an explicit
-      software license (do not license third-party market data).
+- [x] MIT license added to original source and packaging metadata. Vendor-data rights are explicitly excluded.
+- [ ] Author confirms all copied source code is theirs to release under MIT and checks any third-party code notices.
 - [ ] Confirm no third-party market data in PNG/supplement; figures derived from
       strictly synthetic histories are generally lower risk.
 - [ ] Check REMEF's double-blind review policy before putting a public DOI

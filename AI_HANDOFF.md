@@ -27,7 +27,7 @@ A second lightweight example is now included and tested in CI.
    sources, and dependencies that assume private results.
 3. Verify published research numbers from the private source; full numerical
    verification is a separate task.
-4. Select software license with author's approval.
+4. MIT LICENSE and pip/Conda profiles are included; confirm author rights for the original source, and validate wheel/sdist and environments.
 5. Ensure the journal's double-blind policy is addressed before citing this
    author-identifying repository/DOI in a reviewer manuscript.
 6. In Zenodo, connect this GitHub repo, enable GitHub archiving, create a
@@ -37,3 +37,13 @@ A second lightweight example is now included and tested in CI.
 A GitHub repository URL alone does not have a Zenodo DOI; the Zenodo record
 does not exist until an actual deposit/release. Public code without licensed
 input data does not reproduce the entire empirical dataset automatically.
+
+## Packaging update — 2026-10-18
+
+Added MIT LICENSE for original software and docs (not vendor data), PEP 639
+package metadata, canonical dependency profiles in `pyproject.toml`,
+`requirements*.txt`, Conda environments, dependency documentation,
+contributing instructions and packaging metadata tests. Lightweight CI now
+checks the editable installation, full numerical test suite, the example, and
+wheel/sdist creation. Release and Zenodo DOI still wait for the scientific
+and rights checks; do not create a GitHub release automatically.
