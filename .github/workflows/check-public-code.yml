@@ -23,3 +23,5 @@ jobs:
           python -c "import bayesian_asian_options; import bayesian_asian_options.bayesian_gbm; import bayesian_asian_options.asian_pricing"
       - name: Core numerical tests
         run: python -m pytest -q tests
+      - name: Self-contained example
+        run: python examples/posterior_integration_vs_plugin.py

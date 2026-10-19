@@ -16,6 +16,11 @@ Copied 18 reusable library modules, 39 experiment entry-point scripts and
 with a clean public Git history. Exported the synthetic mechanism figure and
 the clean S1–S4 supplement (historical drafting archive excluded).
 
+## Public test confirmation
+The first public CI run on source import (6595ce7b1e75173fd020503d906c0cec361d1777)
+passed the public-data scanner, installation and **46 core numerical tests**.
+A second lightweight example is now included and tested in CI.
+
 ## Next tasks
 1. Verify the public CI installation/imports and all core tests.
 2. Audit public files for hardcoded paths, secrets, arrays copied from market

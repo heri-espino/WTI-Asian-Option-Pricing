@@ -28,6 +28,24 @@ The companion paper reports 175,000 simulated return histories, 310 October-2026
 
 The evidence applies to the maintained constant-volatility, one-factor futures-pricing benchmark, not to all commodity option-pricing models. The out-of-sample comparison covers relatively few valuation dates and many settlement marks have little or no corresponding trading volume.
 
+## Run a self-contained pricing comparison
+
+This short example uses **illustrative volatility scenarios**, not a fitted
+posterior or exchange prices. It demonstrates the difference between averaging
+risk-neutral prices and pricing at the mean volatility:
+
+```bash
+python examples/posterior_integration_vs_plugin.py
+```
+
+For the simulation design and market-dependent experiments reported in the paper,
+use [the experiment map](docs/experiments.md). The market results cannot be
+reproduced from this source-only repository without independently licensed data.
+
+![Posterior integration across synthetic scenarios](figures/synthetic_posterior_integration.png)
+
+*Figure: synthetic experiment, not a chart of proprietary market observations.*
+
 ## Repository guide
 
 | Location | Contents |
@@ -40,7 +58,7 @@ The evidence applies to the maintained constant-volatility, one-factor futures-p
 | `docs/market_data_and_reproducibility.md` | Data access, boundaries, licensed data and validation |
 | `supplement/robustness_and_numerical_checks.md` | Candidate research supplement, Sections S1–S4, without archived drafts |
 | `figures/synthetic_posterior_integration.png` | Synthetic mechanism figure (no raw exchange quotes) |
-| `SOURCE_PROVENANCE.json` | Source commit and checksums of the exported files |
+| `SOURCE_PROVENANCE.json` | Exact private-source commit and Git blob IDs for transferred files |
 
 ## Install
 
