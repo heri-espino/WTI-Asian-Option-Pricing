@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite its archived release and the associated paper when available."
+title: "Posterior Integration and Volatility Inputs in WTI Asian Options: Research Software"
+type: software
+authors:
+  - given-names: Heriberto
+    family-names: Espino-Montelongo
+    affiliation: Universidad de las Américas Puebla
+    orcid: "https://orcid.org/0009-0009-1230-2931"
+version: 0.1.0
+keywords:
+  - Asian options
+  - Bayesian option pricing
+  - WTI crude oil
+  - posterior integration
+  - volatility

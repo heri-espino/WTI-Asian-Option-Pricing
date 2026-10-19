@@ -1,0 +1,25 @@
+name: Check publication-safe research code
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validation:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Reject raw market data and obvious secrets
+        run: python scripts/check_public_release.py
+      - name: Install research package
+        run: python -m pip install -e ".[dev]"
+      - name: Check Python code syntax and imports
+        run: |
+          python -m compileall -q src experiments scripts
+          python -c "import bayesian_asian_options; import bayesian_asian_options.bayesian_gbm; import bayesian_asian_options.asian_pricing"
+      - name: Core numerical tests
+        run: python -m pytest -q tests/test_bayesian_gbm.py tests/test_asian_pricing.py

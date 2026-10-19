@@ -1,0 +1,36 @@
+# Never publish licensed market histories, derived contract-date panels or credentials.
+data/
+results/
+raw/
+private/
+*.csv
+*.dbn
+*.dbn.*
+*.parquet
+*.arrow
+*.feather
+*.jsonl
+*.xlsx
+*.sqlite
+*.db
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.zip
+*.7z
+.env
+.env.*
+*.key
+*.pem
+*.crt
+# Generated files
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+*.egg-info/
+dist/
+build/
+*.log
