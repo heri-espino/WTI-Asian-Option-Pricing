@@ -8,6 +8,10 @@ authors:
     affiliation: Universidad de las Américas Puebla
     orcid: "https://orcid.org/0009-0009-1230-2931"
 version: 0.1.0
+date-released: 2026-10-19
+doi: "10.5281/zenodo.23468649"
+repository-code: "https://github.com/heri-espino/WTI-Asian-Option-Pricing"
+license: MIT
 keywords:
   - Asian options
   - Bayesian option pricing

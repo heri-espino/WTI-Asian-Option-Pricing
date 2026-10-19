@@ -21,6 +21,10 @@ The first public CI run on source import (6595ce7b1e75173fd020503d906c0cec361d17
 passed the public-data scanner, installation and **46 core numerical tests**.
 A second lightweight example is now included and tested in CI.
 
+## Zenodo publication — 2026-10-19
+
+GitHub [v0.1.0](https://github.com/heri-espino/WTI-Asian-Option-Pricing/releases/tag/v0.1.0) has been released and Zenodo has issued **10.5281/zenodo.23468649** for its archived source package. After the archive was created, the DOI was recorded in `CITATION.cff`, `README.md`, and the Zenodo guidance. This later metadata update to `main` does not retroactively change the archived v0.1.0 snapshot. The DOI is author-identifying; do not add it to the blinded reviewer manuscript. The market-data restrictions and provenance caveats remain in force.
+
 ## Next tasks
 1. Verify the public CI installation/imports and all core tests.
 2. Audit public files for hardcoded paths, secrets, arrays copied from market
@@ -30,8 +34,7 @@ A second lightweight example is now included and tested in CI.
 4. MIT LICENSE and pip/Conda profiles are included; confirm author rights for the original source, and validate wheel/sdist and environments.
 5. Ensure the journal's double-blind policy is addressed before citing this
    author-identifying repository/DOI in a reviewer manuscript.
-6. In Zenodo, connect this GitHub repo, enable GitHub archiving, create a
-   verified manual GitHub release, then record the **real DOI** and cite it.
+6. Confirm that the author-version REMEF submission cites the version-specific Zenodo DOI; keep anonymous reviewer materials free of author identifiers.
 
 ## Never claim
 A GitHub repository URL alone does not have a Zenodo DOI; the Zenodo record
@@ -45,5 +48,4 @@ package metadata, canonical dependency profiles in `pyproject.toml`,
 `requirements*.txt`, Conda environments, dependency documentation,
 contributing instructions and packaging metadata tests. Lightweight CI now
 checks the editable installation, full numerical test suite, the example, and
-wheel/sdist creation. Release and Zenodo DOI still wait for the scientific
-and rights checks; do not create a GitHub release automatically.
+wheel/sdist creation. The v0.1.0 archive was subsequently published and received the DOI stated above. Outstanding scientific and rights checks remain explicitly open; do not create additional GitHub releases automatically.

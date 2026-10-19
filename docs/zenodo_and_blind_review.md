@@ -1,5 +1,11 @@
 # Zenodo archiving and journal double-blind review
 
+## Registered release DOI
+
+**Version 0.1.0** was published as a GitHub release on 2026-10-19 and archived via the connected Zenodo workflow. The DOI supplied by the author for this version is **[10.5281/zenodo.23468649](https://doi.org/10.5281/zenodo.23468649)**. Cite this version-specific DOI for the REMEF software artifact. The repository is source-only and excludes licensed Barchart and Databento records.
+
+Future releases must receive their own version-specific DOI; changing the repository after this archive does not change the contents of the archived v0.1.0 release.
+
 ## Creating a DOI through the GitHub integration
 
 1. Finish the code/data-rights review and select an appropriate software license. Inspect `SOURCE_PROVENANCE.json` and run `python scripts/check_public_release.py`.
@@ -24,8 +30,8 @@ Only use this if there actually is an anonymized review package; do not claim ac
 
 ## Paper software citation (after DOI exists)
 
-Example formatting, **not a valid citation until completed**:
+The actual version-specific citation is:
 
-`Espino-Montelongo, H. (2026). Posterior Integration and Volatility Inputs in WTI Asian Options: Research Software (Version 0.1.0) [Computer software]. Zenodo. https://doi.org/ACTUAL-DOI`
+`Espino-Montelongo, H. (2026). Posterior Integration and Volatility Inputs in WTI Asian Options: Research Software (Version 0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23468649`
 
-Do not publish a placeholder DOI as if it were registered.
+Keep the DOI in the author-identifying manuscript and editorial correspondence. It is not anonymous and should not appear in the reviewer manuscript absent editorial permission.
