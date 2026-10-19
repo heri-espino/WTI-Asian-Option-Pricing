@@ -1,5 +1,9 @@
 # Posterior Integration and Volatility Inputs in WTI Asian Options
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23468649.svg)](https://doi.org/10.5281/zenodo.23468649)
+
+**Archived source release:** [v0.1.0 (Zenodo, DOI: 10.5281/zenodo.23468649)](https://doi.org/10.5281/zenodo.23468649). This archive contains source code, documentation, tests, and synthetic examples—not vendor market data.
+
 Reproducible research software for the paper **“Posterior Integration and Volatility Inputs in WTI Asian Options.”** This repository separates **Bayesian uncertainty in a volatility parameter** from **the choice of volatility information** used to price WTI Average Price Options (APOs).
 
 This is the **public software and documentation package**. It is deliberately separate from the internal research archive. Market observations purchased or downloaded from Barchart and Databento are **not redistributed here**.
@@ -92,7 +96,9 @@ Some empirical experiments require separately licensed inputs.
 
 Start with [the experiment map](docs/experiments.md). Synthetic tests do not require Barchart or Databento, but publication-sized runs can be expensive. WTI APO empirical workflows require your own eligible Barchart/Databento access and explicitly dated CL futures and option histories. Do not substitute continuously rolled futures for the contemporaneous CL term structure without reporting that as a different experiment.
 
-**Citation:** See [`CITATION.cff`](CITATION.cff). The Zenodo DOI will be added **after a verified GitHub release has actually been archived**; no DOI has been assigned to this candidate package yet. A blinded manuscript should not disclose an author-identifying public repository URL unless the journal permits it.
+**Software citation (version 0.1.0):** Espino-Montelongo, H. (2026). *Posterior Integration and Volatility Inputs in WTI Asian Options: Research Software* (Version 0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23468649
+
+See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata and the [GitHub release](https://github.com/heri-espino/WTI-Asian-Option-Pricing/releases/tag/v0.1.0) for its source tag. Do not put this author-identifying DOI in an anonymous reviewer manuscript without journal/editor approval. The archived files are not updated by subsequent commits to `main`; newer releases will receive distinct version DOIs.
 
 ## License and contributions
 
