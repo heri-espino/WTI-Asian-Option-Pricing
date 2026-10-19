@@ -1,17 +1,29 @@
-# Release requirements (blockers until verified)
+# Release checklist
 
-This is a proposed clean public research **software** repository, not a data deposit.
+## Implemented
+- [x] The vendor-data source repository is private.
+- [x] This destination has independent Git history; no fork/import.
+- [x] Copied the actual reusable source, experiments, core numerical tests and
+      one clearly identified synthetic mechanism figure.
+- [x] No `data/`, `results/`, `archive/` or licensed raw CSVs in the publication tree.
+- [x] Removed legacy source-archive material from supplement sections S1–S4.
+- [x] Source origin commit and per-file Git blob IDs recorded in SOURCE_PROVENANCE.json.
 
-- [ ] Set the original vendor-data repository to **private**; investigate public forks and cached copies separately.
-- [ ] Create a new empty GitHub repository with a **fresh Git history**, not a fork/import/mirror of the original.
-- [ ] Review the export folder, all source files and `SOURCE_PROVENANCE.json` before pushing. The automated scanner is necessary but not a license opinion.
-- [ ] Confirm that no experimental script embeds a private API key, person-specific workstation path, or unlicensed market price arrays.
-- [ ] Confirm ownership and choose an explicit software license. Never claim that it licenses market data.
-- [ ] Verify `python -m pip install -e ".[dev]"`, relevant synthetic tests, README commands, and the source API after export.
-- [ ] Recheck the cleaned supplement tables against the private source result files.
-- [ ] Verify the source-commit SHA and paper manuscript numbers (310 / 2381 / 253 samples) before publication.
-- [ ] Resolve the journal's double-blind review rules before including the public DOI in a blinded manuscript.
-- [ ] Enable the **new** repository in Zenodo's GitHub integration **before** creating a tagged GitHub release.
-- [ ] Publish a verified GitHub software release; inspect the Zenodo record and only then add its real DOI to `CITATION.cff` and the author-identified paper.
+## Must pass before a software release / Zenodo DOI
+- [ ] CI: `python -m pip install -e ".[dev]"`, imports, numerical tests and public-file scanner.
+- [ ] Independently verify full numerical reported results using *private* licensed inputs.
+- [ ] Inspect every source script for local paths, network downloads or proprietary rows.
+- [ ] Confirm author holds the rights to license the source code; choose an explicit
+      software license (do not license third-party market data).
+- [ ] Confirm no third-party market data in PNG/supplement; figures derived from
+      strictly synthetic histories are generally lower risk.
+- [ ] Check REMEF's double-blind review policy before putting a public DOI
+      into the reviewer manuscript.
+- [ ] Enable this repository in Zenodo **before** creating a tagged release.
+- [ ] Create a GitHub `v0.1.0` release, verify the Zenodo DOI, update citation
+      metadata with the *actual* DOI, and cite in the author paper if permitted.
 
-A Zenodo record, DOI and live GitHub repository do not yet exist for this release candidate.
+## Editorial status
+This repository is a **research software candidate**, not a deposit of
+Barchart, Databento or other licensed market data. It does not guarantee
+independent full empirical replication from the public tree alone.

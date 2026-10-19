@@ -1,0 +1,356 @@
+{
+  "origin_repository": "heri-espino/Bayesian-Uncertainty-in-WTI-APOs",
+  "origin_commit": "077c9e61ae4da91a5f42c4f040a3975a1360f57b",
+  "export_method": "Explicit source-only copy into independent public Git history; vendor market data excluded",
+  "source_git_blob_hash": "Git's object SHA-1; file data can be verified by comparing Git blobs",
+  "counts": {
+    "library": 18,
+    "experiments": 39,
+    "tests": 9
+  },
+  "third_party_market_data_included": false,
+  "additional_assets": [
+    {
+      "public_path": "figures/synthetic_posterior_integration.png",
+      "source_path": "figures/publication/fig01_mechanism_map.png",
+      "source_git_blob_sha": "d42c06a6c52a11e603a469ff6e08efc40fa9a949"
+    },
+    {
+      "public_path": "supplement/robustness_and_numerical_checks.md",
+      "source_path": "paper/supplement/online_supplement.md",
+      "transformation": "Copy material before Archive A; remove legacy archive; note editorial header cleanup"
+    }
+  ],
+  "files": [
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/__init__.py",
+      "public_path": "src/bayesian_asian_options/__init__.py",
+      "source_git_blob_sha": "279e7e9848a0d5f1a45c2ba603ea960c31b80db2"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/accelerated_pricing.py",
+      "public_path": "src/bayesian_asian_options/accelerated_pricing.py",
+      "source_git_blob_sha": "4df0f0bcfe06e5b5172407f94c2b7f14b683dfe1"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/american_futures_option.py",
+      "public_path": "src/bayesian_asian_options/american_futures_option.py",
+      "source_git_blob_sha": "29b6660ba3bb2cb67594c14400db7e398d292b33"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/asian_futures_pricing.py",
+      "public_path": "src/bayesian_asian_options/asian_futures_pricing.py",
+      "source_git_blob_sha": "5f3741614604cfc4d1cd54118e04a018ae246e8b"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/asian_pricing.py",
+      "public_path": "src/bayesian_asian_options/asian_pricing.py",
+      "source_git_blob_sha": "de238a3cf4c6df6cb7029b3844b0091ae11bcc91"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/barchart_apo.py",
+      "public_path": "src/bayesian_asian_options/barchart_apo.py",
+      "source_git_blob_sha": "076882fffdecb44abe97688767b399654a54693d"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/barchart_cl.py",
+      "public_path": "src/bayesian_asian_options/barchart_cl.py",
+      "source_git_blob_sha": "18cd051dde841b36c94078f568c5e87d280ea18f"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/bayesian_gbm.py",
+      "public_path": "src/bayesian_asian_options/bayesian_gbm.py",
+      "source_git_blob_sha": "2558dc91a488573b2798bb2a9be29ba715372808"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/bayesian_student_t.py",
+      "public_path": "src/bayesian_asian_options/bayesian_student_t.py",
+      "source_git_blob_sha": "ee60b655c436f2c289043af67444e5197e77d5d2"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/databento_wti.py",
+      "public_path": "src/bayesian_asian_options/databento_wti.py",
+      "source_git_blob_sha": "ed3502beb3028648a0d08d1356f105dc1e71c94b"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/gaussian_sigma_quadrature.py",
+      "public_path": "src/bayesian_asian_options/gaussian_sigma_quadrature.py",
+      "source_git_blob_sha": "b14faec16eeda556c90936aaa4d3d761dcf979e1"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/rates.py",
+      "public_path": "src/bayesian_asian_options/rates.py",
+      "source_git_blob_sha": "a66f14c8d068b01d954b7193ec5c9c60b5634bc0"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/synthetic_validation.py",
+      "public_path": "src/bayesian_asian_options/synthetic_validation.py",
+      "source_git_blob_sha": "5388c39b56e70184e94fc63cb2dde922628a14b7"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/volatility_regimes.py",
+      "public_path": "src/bayesian_asian_options/volatility_regimes.py",
+      "source_git_blob_sha": "0fd94463022fd6848f15a34fcebaa391fb6c8d80"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/wti_apo_pricing.py",
+      "public_path": "src/bayesian_asian_options/wti_apo_pricing.py",
+      "source_git_blob_sha": "c9efd789335a6533f27e570b751ab9aa941e1ebd"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/wti_first_nearby.py",
+      "public_path": "src/bayesian_asian_options/wti_first_nearby.py",
+      "source_git_blob_sha": "088159b5fad0b902137f60d3a10c68bc57fdad60"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/wti_yahoo.py",
+      "public_path": "src/bayesian_asian_options/wti_yahoo.py",
+      "source_git_blob_sha": "f5e13021cb9ce2b058a864fc80967f7968ffd76e"
+    },
+    {
+      "source_path": "bayesian_asian_options/src/bayesian_asian_options/wti_yahoo_futures.py",
+      "public_path": "src/bayesian_asian_options/wti_yahoo_futures.py",
+      "source_git_blob_sha": "38c00ba316613580dde35b7a8d0a152920ce598f"
+    },
+    {
+      "source_path": "experiments/__init__.py",
+      "public_path": "experiments/__init__.py",
+      "source_git_blob_sha": "24d6ad1cb5793ba9aa40c2de5a2979ba6f388d8b"
+    },
+    {
+      "source_path": "experiments/analyze_extreme_results.py",
+      "public_path": "experiments/analyze_extreme_results.py",
+      "source_git_blob_sha": "f0861d6d98180796d363d4e9f17d7b51250ac8c3"
+    },
+    {
+      "source_path": "experiments/analyze_partial_fixing.py",
+      "public_path": "experiments/analyze_partial_fixing.py",
+      "source_git_blob_sha": "0de9c7a32f032fd7492623fcd9bb169c5b5fb162"
+    },
+    {
+      "source_path": "experiments/build_wti_apo_panel.py",
+      "public_path": "experiments/build_wti_apo_panel.py",
+      "source_git_blob_sha": "62e36d4cb162e78981113c1b6b0d687ee5937c22"
+    },
+    {
+      "source_path": "experiments/large_scale_synthetic.py",
+      "public_path": "experiments/large_scale_synthetic.py",
+      "source_git_blob_sha": "34d67c666143e1bd2471bc9f20e7d11b7aeed7c8"
+    },
+    {
+      "source_path": "experiments/massive_mechanism_map.py",
+      "public_path": "experiments/massive_mechanism_map.py",
+      "source_git_blob_sha": "90ad3ab1fb25f21d517d58b4b86d7b86a509beb3"
+    },
+    {
+      "source_path": "experiments/precompute_pricing_grids.py",
+      "public_path": "experiments/precompute_pricing_grids.py",
+      "source_git_blob_sha": "573a68a812f956b94fb19e1ccc208fc3d37b2fd9"
+    },
+    {
+      "source_path": "experiments/publication_experiment.py",
+      "public_path": "experiments/publication_experiment.py",
+      "source_git_blob_sha": "e1b463a9d9b19e564f754f6c04f8d3935849cffb"
+    },
+    {
+      "source_path": "experiments/simulation_based_calibration.py",
+      "public_path": "experiments/simulation_based_calibration.py",
+      "source_git_blob_sha": "b861c3ba35c36fea9094b7d431f07c9ccdb7647d"
+    },
+    {
+      "source_path": "experiments/synthetic_validation.py",
+      "public_path": "experiments/synthetic_validation.py",
+      "source_git_blob_sha": "cb70b2839d1e9cfac5302c2db5e19d5d791efda7"
+    },
+    {
+      "source_path": "experiments/taylor_mechanism.py",
+      "public_path": "experiments/taylor_mechanism.py",
+      "source_git_blob_sha": "210228cb12fe87fb6c27f3e0c7a1f5b1a0f87418"
+    },
+    {
+      "source_path": "experiments/wti_apo_date_panel.py",
+      "public_path": "experiments/wti_apo_date_panel.py",
+      "source_git_blob_sha": "024e12068563586ac1b5531428c6f0944435d15f"
+    },
+    {
+      "source_path": "experiments/wti_apo_empirical.py",
+      "public_path": "experiments/wti_apo_empirical.py",
+      "source_git_blob_sha": "3f1b045601a7ce84db10b21c131e944d2abc94a8"
+    },
+    {
+      "source_path": "experiments/wti_apo_implied_volatility.py",
+      "public_path": "experiments/wti_apo_implied_volatility.py",
+      "source_git_blob_sha": "15b916dcf57a7c3969e613aaac39be5dd3d093c9"
+    },
+    {
+      "source_path": "experiments/wti_curran_benchmark.py",
+      "public_path": "experiments/wti_curran_benchmark.py",
+      "source_git_blob_sha": "0ab07777fff187fd1824c49cf78f62493d13d848"
+    },
+    {
+      "source_path": "experiments/wti_databento_external_q.py",
+      "public_path": "experiments/wti_databento_external_q.py",
+      "source_git_blob_sha": "5ac5a383461bd2eed17bbf69f4e428a079e999aa"
+    },
+    {
+      "source_path": "experiments/wti_databento_external_q_audit.py",
+      "public_path": "experiments/wti_databento_external_q_audit.py",
+      "source_git_blob_sha": "4da5d11a59dc735841b9f336dfecd1874effc2c2"
+    },
+    {
+      "source_path": "experiments/wti_databento_external_q_iv.py",
+      "public_path": "experiments/wti_databento_external_q_iv.py",
+      "source_git_blob_sha": "663f729269c0a63a545b7c12aba36f3049fca8ae"
+    },
+    {
+      "source_path": "experiments/wti_databento_first_nearby.py",
+      "public_path": "experiments/wti_databento_first_nearby.py",
+      "source_git_blob_sha": "f4dcc050c3b61a1eaaa4a4a7a2beecc1a004c357"
+    },
+    {
+      "source_path": "experiments/wti_expiry_coverage_audit.py",
+      "public_path": "experiments/wti_expiry_coverage_audit.py",
+      "source_git_blob_sha": "f33ad33c6591f3f0872b68c5463d4f42c1140f4c"
+    },
+    {
+      "source_path": "experiments/wti_external_q_cluster_bootstrap.py",
+      "public_path": "experiments/wti_external_q_cluster_bootstrap.py",
+      "source_git_blob_sha": "8b50e0a19191f1d60115c9e378ccdf7712733509"
+    },
+    {
+      "source_path": "experiments/wti_external_vanilla_q_validation.py",
+      "public_path": "experiments/wti_external_vanilla_q_validation.py",
+      "source_git_blob_sha": "82c083c6544a795fa7c5efbc1ed1b39ed14b092b"
+    },
+    {
+      "source_path": "experiments/wti_first_nearby_pricing_comparison.py",
+      "public_path": "experiments/wti_first_nearby_pricing_comparison.py",
+      "source_git_blob_sha": "6b9127c7259a92943a63d8ca4e69bdff3d9fc786"
+    },
+    {
+      "source_path": "experiments/wti_first_nearby_reconstruction.py",
+      "public_path": "experiments/wti_first_nearby_reconstruction.py",
+      "source_git_blob_sha": "9779c4efce98c88999f5a3e3aa9a87f2ce640ae1"
+    },
+    {
+      "source_path": "experiments/wti_forward_q_validation.py",
+      "public_path": "experiments/wti_forward_q_validation.py",
+      "source_git_blob_sha": "24236a0582161745cabe739115ea51ee8d05cce9"
+    },
+    {
+      "source_path": "experiments/wti_garch_horizon_benchmark.py",
+      "public_path": "experiments/wti_garch_horizon_benchmark.py",
+      "source_git_blob_sha": "5e86287f29f2b0ef8d289520d7dfe9322e1a28fc"
+    },
+    {
+      "source_path": "experiments/wti_high_precision_pricing.py",
+      "public_path": "experiments/wti_high_precision_pricing.py",
+      "source_git_blob_sha": "01b7497571b73a24d966f9e2a2f06b852f3e8513"
+    },
+    {
+      "source_path": "experiments/wti_liquidity_bootstrap.py",
+      "public_path": "experiments/wti_liquidity_bootstrap.py",
+      "source_git_blob_sha": "4e28150edfbbf95d1eb4d6331c20285f4ea440a2"
+    },
+    {
+      "source_path": "experiments/wti_lo_surface_shape_audit.py",
+      "public_path": "experiments/wti_lo_surface_shape_audit.py",
+      "source_git_blob_sha": "784c8f4652d9ef93ea58f5913bf2da7d10c689c9"
+    },
+    {
+      "source_path": "experiments/wti_lo_tree_convergence.py",
+      "public_path": "experiments/wti_lo_tree_convergence.py",
+      "source_git_blob_sha": "3c9b46f9787f6f93e449f0ebe4b6e048f4b8158b"
+    },
+    {
+      "source_path": "experiments/wti_mc_convergence.py",
+      "public_path": "experiments/wti_mc_convergence.py",
+      "source_git_blob_sha": "905bc146570cb57f99fce06f85674c70bd8b81c7"
+    },
+    {
+      "source_path": "experiments/wti_prior_contract_iv_carry.py",
+      "public_path": "experiments/wti_prior_contract_iv_carry.py",
+      "source_git_blob_sha": "227e5a96f66a190f1010721592ade299d3368a05"
+    },
+    {
+      "source_path": "experiments/wti_prior_window_sensitivity.py",
+      "public_path": "experiments/wti_prior_window_sensitivity.py",
+      "source_git_blob_sha": "4942f543523412ac92ad1ec3885d6a42adf436f5"
+    },
+    {
+      "source_path": "experiments/wti_randomized_qmc_benchmark.py",
+      "public_path": "experiments/wti_randomized_qmc_benchmark.py",
+      "source_git_blob_sha": "e1737b16956101dcde235be84c34bb74150dc3b2"
+    },
+    {
+      "source_path": "experiments/wti_recent_historical_benchmarks.py",
+      "public_path": "experiments/wti_recent_historical_benchmarks.py",
+      "source_git_blob_sha": "1b612bf87a0e2bf65d210141620c441cf466e487"
+    },
+    {
+      "source_path": "experiments/wti_rms_plugin_comparison.py",
+      "public_path": "experiments/wti_rms_plugin_comparison.py",
+      "source_git_blob_sha": "b0c42a577a102b625fea0135f8a680e29e71bfac"
+    },
+    {
+      "source_path": "experiments/wti_student_t_robustness.py",
+      "public_path": "experiments/wti_student_t_robustness.py",
+      "source_git_blob_sha": "276f72122b9d41cec01c0e96ea82aac0ae84593a"
+    },
+    {
+      "source_path": "experiments/wti_vanilla_cl_audit.py",
+      "public_path": "experiments/wti_vanilla_cl_audit.py",
+      "source_git_blob_sha": "34e8ac7ad212f5cc75a7a4232eab1661b3e317f2"
+    },
+    {
+      "source_path": "experiments/wti_yahoo_application.py",
+      "public_path": "experiments/wti_yahoo_application.py",
+      "source_git_blob_sha": "50c78dbf6868d89f3b1e1b7cc943bae6e529af5b"
+    },
+    {
+      "source_path": "tests/test_accelerated_pricing.py",
+      "public_path": "tests/test_accelerated_pricing.py",
+      "source_git_blob_sha": "35efd84a240adc704d1f460add075c47acf4f3c2"
+    },
+    {
+      "source_path": "tests/test_american_futures_option.py",
+      "public_path": "tests/test_american_futures_option.py",
+      "source_git_blob_sha": "d7a298a05995ae845216ff4dd782b2f32be948ba"
+    },
+    {
+      "source_path": "tests/test_asian_pricing.py",
+      "public_path": "tests/test_asian_pricing.py",
+      "source_git_blob_sha": "9c71b7fe8f862f7319807552ce3c47e637f633bb"
+    },
+    {
+      "source_path": "tests/test_bayesian_gbm.py",
+      "public_path": "tests/test_bayesian_gbm.py",
+      "source_git_blob_sha": "e9cfd2a7dc2c2b3dbd3cb56c1c3a6f0b42bd8258"
+    },
+    {
+      "source_path": "tests/test_bayesian_student_t.py",
+      "public_path": "tests/test_bayesian_student_t.py",
+      "source_git_blob_sha": "e5b51117fdd7cc5ff4c6486d664c07a1d4d81c8d"
+    },
+    {
+      "source_path": "tests/test_curran_futures_pricing.py",
+      "public_path": "tests/test_curran_futures_pricing.py",
+      "source_git_blob_sha": "da2a215a51d4021b115e748e44f46a1b76dd1a80"
+    },
+    {
+      "source_path": "tests/test_gaussian_sigma_quadrature.py",
+      "public_path": "tests/test_gaussian_sigma_quadrature.py",
+      "source_git_blob_sha": "010e80f6b921a2be086ef4c3028c5a259e5d4e37"
+    },
+    {
+      "source_path": "tests/test_synthetic_validation.py",
+      "public_path": "tests/test_synthetic_validation.py",
+      "source_git_blob_sha": "f48d57ca7ed1ed40e26e6b3062eb6f4e9e6e6025"
+    },
+    {
+      "source_path": "tests/test_wti_apo_pricing.py",
+      "public_path": "tests/test_wti_apo_pricing.py",
+      "source_git_blob_sha": "93e6780d52ddc1e52e9cc3be5630da434a0c19e7"
+    }
+  ]
+}
